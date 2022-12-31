@@ -151,7 +151,7 @@ Project Nonnon
 
 		+ Visual C++ 2017 で作成されているニャ
 
-	[ project_nonnon.zip ]
+	[ nonnon_win_source.zip ]
 
 		Win32 版のソースコードでニャ
 		アイコンやサウンドといったリソースも入っているニャ
