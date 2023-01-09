@@ -12,6 +12,86 @@
 Change Log
 
 
+2022/12/30 #3 : 2023/01/09
+
+
+BUGFIX
+
+
+	mac/n_txtbox.c
+		click to focus : line number
+			OLD : not adjusted in some cases
+			NEW : re-tuned
+		decoration is on
+			OLD : selection misbehaves
+			NEW : fixed
+
+	Nonnon Paint for Mac
+		Multi-Layer : Txtbox : arrow key
+			OLD : scrollbar positions are not set
+			NEW : fixed
+		Multi-Layer : Loader : when files are not exist
+			OLD : crash
+			NEW : fixed
+		Multi-Layer : Rename : Shift Selection
+			OLD : misbehave
+			NEW : fixed
+		Multi-Layer : Layer Window : double menu click
+			OLD : jammed when you click many times
+			NEW : fixed
+		Pen
+			OLD : too small
+			NEW : fixed
+		Pen Size : step
+			OLD : 1
+			NEW : 2, odd number only
+			[?] : for example, 4 and 5 are the same output
+		Grabber : DnD
+			OLD : always handled as succeeded
+			NEW : fixed
+		Save : Layer
+			OLD : crash
+			NEW : fixed
+			[x] : render cache causes
+		Save : Layer #2
+			OLD : not initialized
+			NEW : fixed
+	Project Checker for Mac
+		double menu click
+			OLD : jammed when you click many times
+			NEW : fixed
+
+
+NEW_FEATURE
+
+
+	mac/window.c
+		n_mac_window_centering()
+			OLD : full screen based
+			NEW : size without Dock
+
+	Marie for Mac
+		window : maxmum size
+			OLD : 80% of desktop
+			NEW : use all screen
+		Animation GIF
+			NEW : supported
+	Nonnon Freecell for Mac
+		window
+			NEW : centered by area without Dock
+	Nonnon Paint for Mac
+		window
+			NEW : a little larger
+		Resizer ; Squircle 256px
+			NEW : drop shadow available
+
+
+----------==========----------==========----------==========----------
+
+
+Change Log
+
+
 2022/12/30 #2 : 2023/01/02
 
 
